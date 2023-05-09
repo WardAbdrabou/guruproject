@@ -1,0 +1,468 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(249, 249, 249);
+}
+
+/* container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* grid */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 28.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 49%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.margin {
+    margin-top: 90px;
+}
+
+/* nav bar */
+.nav {
+    padding: 15px 0px;
+    color: white;
+}
+
+.nav .container {
+    display: inline;
+    display: flex;
+}
+
+.nav h1 {
+    position: absolute;
+    width: 254px;
+    height: 40px;
+    left: 150px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 5px;
+
+    color: #FE8A00;
+}
+
+.nav .class {
+    height: 52px;
+    width: 54.55px;
+    height: 52px;
+    left: 10px;
+    top: 10px;
+    border-radius: 0px;
+
+}
+
+.nav .vector {
+    height: 25px;
+    width: 23.333332061767578px;
+    left: 1400px;
+    top: 30px;
+    border-radius: 0px;
+    position: absolute;
+    float: right;
+
+}
+
+.header {
+    background-image: url(../images/ad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+.header .content h1 {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    transform: translate(10%, 10%);
+    width: 367.91px;
+    height: 101.11px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.header .content img {
+    float: left;
+    position: absolute;
+    width: 253px;
+    height: 358px;
+}
+
+.header .content #img2 {
+    float: right;
+    position: absolute;
+    left: 1229px;
+    width: 253px;
+    height: 358px;
+}
+
+/* our work section*/
+.ourwork {
+    text-align: center;
+}
+
+.ourwork h2 {
+    margin-bottom: 20px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: rgba(0, 0, 0, 0.75);
+
+}
+
+.ourwork .picture1 img,
+.picture2 img {
+    width: 320px;
+    height: 320px;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.ourwork .picture1 {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.ourwork .picture2 {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+
+.ourwork div {
+    overflow: hidden;
+}
+
+.ourwork .picture1 .img_card,
+.ourwork .picture2 .img_card {
+    width: 320px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.ourwork .picture1 .img_card .img_info,
+.ourwork .picture2 .img_card .img_info {
+    text-align: left;
+    font-family: 'Outfit';
+    display: inline-block;
+    margin-top: 5px;
+    z-index: 1;
+}
+.ourwork .picture1 .img_card .img_info h4,
+.ourwork .picture2 .img_card .img_info h4 {
+    display: inline;
+    font-size: 16px;
+}
+
+.ourwork .picture1 .img_card .img_info #left,
+.ourwork .picture2 .img_card .img_info #left {
+    margin-left: 225px;
+}
+
+.ourwork .picture1 .img_card .img_info p,
+.ourwork .picture2 .img_card .img_info p {
+    margin-top: 8px;
+
+}
+
+.see a button {
+
+    position: absolute;
+    width: 94.88px;
+    height: 25.28px;
+    left: 671.9px;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #F61B5A;
+
+    margin-top: 30px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 168.67px;
+    height: 36.4px;
+    left: 635px;
+    background: #FFFFFF;
+    border-radius: 31.5px;
+    border: none;
+    background-image: url(../images/Rectangle\ 1.png);
+}
+
+/* about us section*/
+.aboutus .aboutright {
+    position: relative;
+}
+
+.aboutus .aboutright h2 {
+    font-family: Inter;
+    Font-style: Bold;
+    Font-size: 36px;
+    Line-height: 48px;
+    Line-height: 110%;
+    text-align: Left;
+    Vertical-align: Top;
+    letter-spacing: -2.2%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.aboutus .aboutright .ap,
+.aboutus .aboutright .stock,
+.aboutus .aboutright .brand,
+.aboutus .aboutright .size {
+    color: #252C32;
+    font-size: 21px;
+    font-family: "Inter";
+    Font-style: Regular;
+    Font-size: 14px;
+    Line-height: 24px;
+    Line-height: 142%;
+    text-align: Left;
+    vertical-align: Top;
+    letter-spacing: -0.6%;
+}
+
+.aboutus .aboutright .brand {
+    color: #6E7C87;
+}
+
+.aboutus .aboutright .size {
+    color: #252C32;
+    margin-top: 40px;
+}
+
+.aboutus .aboutright p {
+    color: #888;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus .aboutleft img {
+    width: 719.75px;
+    height: 815.34px;
+    margin-top: 20px;
+}
+
+.aboutus .aboutright button {
+    border-top-left-radius: 6px;
+    border: none;
+    margin-left: 20px;
+    background-color: #E5E9EB;
+    padding: 8px, 16px, 8px, 16px;
+    width: 60px;
+    height: 30px;
+}
+
+.aboutus .aboutright .add button {
+    font-family: Outfit;
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 25px;
+    Line-height: 100%;
+    text-align: Center;
+    vertical-align: Top;
+    color: #F61B5A;
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 50px;
+    border-radius: 31.5px;
+}
+
+.aboutus .aboutright .added button {
+    background-color: rgb(249, 249, 249);
+    font-family: Outfit;
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 25px;
+    Line-height: 100%;
+    text-align: Center;
+    vertical-align: Top;
+    color: #252C32;
+    margin-top: 60px;
+    width: 500px;
+    height: 50px;
+    border-radius: 31.5px;
+
+}
+.test{
+    text-align: center;
+    position: relative;
+}
+.test h2{
+    font-size: 60px;
+}
+
+.test div{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+}
+.test p{
+    Font-family: 'Airbnb' 'Cereal' 'App';
+Font-style: Book;
+Font-size: 16px;
+Line-height: 24px;
+text-align: Center;
+Vertical-align: Top;
+color: #707B81;
+}
+.test .cform{
+    padding: 40px 40px 80px 40px;
+    margin-left: 180px;
+    margin-top: 160px ;
+    position: relative;
+}
+label{
+    color: #444;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+}
+.test .cform #on{
+    top:100%;
+    left:20%;
+    transform: translate(-50% , -50%);
+}
+input[type=text] , input[type=email]  {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 20px;
+border-radius: 100px;
+border-width: 0px;
+
+}
+.test .cform p{
+    position: absolute;
+    top: 11%;
+    left: 18% ;
+    transform: translate(-50% , -50%);
+    font-family: 'Urbanist';
+Font-style: Regular;
+Font-size: 18px;
+Line-height: 25px;
+Line-height: 140%;
+text-align: Left;
+Vertical-align: Center;
+Letter-spacing: 0.2px;
+color: #212121
+;
+text-align: left;
+}
+input[type=checkbox]{
+   margin-right: 900px;
+}
+input[type=submit]{
+    position: absolute;
+    top: 80%;
+    left: 30% ;
+    transform: translate(-50% , -50%);
+    border: none;
+    cursor: pointer;
+    font-family: Outfit;
+    Font-style: Medium;
+    Font-size: 20px;
+    Line-height: 25px;
+    Line-height: 100%;
+    text-align: Center;
+    vertical-align: Top;
+    color: #F61B5A;
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 50px;
+    border-radius: 31.5px;
+}
